@@ -1,0 +1,117 @@
+\hypertarget{course_8h}{}\doxysection{course.\+h File Reference}
+\label{course_8h}\index{course.h@{course.h}}
+
+
+a structure courses defined which contains name , code , students enrolled and total number of students.  
+
+
+{\ttfamily \#include \char`\"{}student.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__course}{\+\_\+course}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{course_8h_a2540079ef5f89c5f4aea7a0255f11475}\label{course_8h_a2540079ef5f89c5f4aea7a0255f11475}} 
+typedef struct \mbox{\hyperlink{struct__course}{\+\_\+course}} {\bfseries Course}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{course_8h_af3abbc650ef56ffff427a62dad63fc77}{enroll\+\_\+student}} (\mbox{\hyperlink{struct__course}{Course}} $\ast$course, \mbox{\hyperlink{struct__student}{Student}} $\ast$student)
+\begin{DoxyCompactList}\small\item\em Enrolls students into courses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{course_8h_a99bf8b3f3c2d5dc7cf798ed445eaaa77}{print\+\_\+course}} (\mbox{\hyperlink{struct__course}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em prints the name , code and total students in a certain course \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__student}{Student}} $\ast$ \mbox{\hyperlink{course_8h_ac1d82150824c7ecd43bab36fb83cd779}{top\+\_\+student}} (\mbox{\hyperlink{struct__course}{Course}} $\ast$course)
+\begin{DoxyCompactList}\small\item\em Returns the student with the highest grade. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct__student}{Student}} $\ast$ \mbox{\hyperlink{course_8h_ab1ba9629dc52188231bb689d3a855813}{passing}} (\mbox{\hyperlink{struct__course}{Course}} $\ast$course, int $\ast$total\+\_\+passing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a structure courses defined which contains name , code , students enrolled and total number of students. 
+
+\begin{DoxyAuthor}{Author}
+Nihal Singh
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/04-\/11
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{course_8h_af3abbc650ef56ffff427a62dad63fc77}\label{course_8h_af3abbc650ef56ffff427a62dad63fc77}} 
+\index{course.h@{course.h}!enroll\_student@{enroll\_student}}
+\index{enroll\_student@{enroll\_student}!course.h@{course.h}}
+\doxysubsubsection{\texorpdfstring{enroll\_student()}{enroll\_student()}}
+{\footnotesize\ttfamily void enroll\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__course}{Course}} $\ast$}]{course,  }\item[{\mbox{\hyperlink{struct__student}{Student}} $\ast$}]{student }\end{DoxyParamCaption})}
+
+
+
+Enrolls students into courses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & the course that student wants to enroll in \\
+\hline
+{\em student} & student that is being enrolled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{course_8h_ab1ba9629dc52188231bb689d3a855813}\label{course_8h_ab1ba9629dc52188231bb689d3a855813}} 
+\index{course.h@{course.h}!passing@{passing}}
+\index{passing@{passing}!course.h@{course.h}}
+\doxysubsubsection{\texorpdfstring{passing()}{passing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__student}{Student}} $\ast$ passing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__course}{Course}} $\ast$}]{course,  }\item[{int $\ast$}]{total\+\_\+passing }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & the course that student wants to enroll in \\
+\hline
+{\em total\+\_\+passing} & keeps a count of students passing the course ( integer ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ a struct 
+\end{DoxyReturn}
+\mbox{\Hypertarget{course_8h_a99bf8b3f3c2d5dc7cf798ed445eaaa77}\label{course_8h_a99bf8b3f3c2d5dc7cf798ed445eaaa77}} 
+\index{course.h@{course.h}!print\_course@{print\_course}}
+\index{print\_course@{print\_course}!course.h@{course.h}}
+\doxysubsubsection{\texorpdfstring{print\_course()}{print\_course()}}
+{\footnotesize\ttfamily void print\+\_\+course (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__course}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+prints the name , code and total students in a certain course 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & the course that student wants to enroll in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{course_8h_ac1d82150824c7ecd43bab36fb83cd779}\label{course_8h_ac1d82150824c7ecd43bab36fb83cd779}} 
+\index{course.h@{course.h}!top\_student@{top\_student}}
+\index{top\_student@{top\_student}!course.h@{course.h}}
+\doxysubsubsection{\texorpdfstring{top\_student()}{top\_student()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__student}{Student}} $\ast$ top\+\_\+student (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct__course}{Course}} $\ast$}]{course }\end{DoxyParamCaption})}
+
+
+
+Returns the student with the highest grade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course} & the course that student wants to enroll in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Student$\ast$ a struct 
+\end{DoxyReturn}
